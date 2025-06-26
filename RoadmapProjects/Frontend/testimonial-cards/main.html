@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10 0 10 0;
+            justify-content: none;
+        }
+        
+        .box, .border-box {
+            flex: 1 1 45%;
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 0 10 0 10;
+            font-size: 1.11em;
+            min-width: 280px;
+        }
+
+        .profile-box {
+            flex: 1 1 25%;
+            box-sizing: border-box;
+            padding: 0 0 0 10;
+        }
+
+        .content-box {
+            flex: 1 1 65%;
+            box-sizing: border-box;
+            font-size: 1.11em;
+            margin-right: 10px;
+        }
+
+        .content-box .headline{
+            font-size: 1.55em;
+            margin: 0;
+        }
+
+        .content-box p{
+            margin: 13 0 13 0;
+        }
+
+        .content-box li{
+            margin: 0 0 13 0;
+            list-style: none;
+        }
+
+        .black-box-2 {
+            background-color: #101517;
+            color: white;
+            position: relative;
+            border-radius: 15px;
+            border: 3px solid #101517;
+            padding: 20px;
+        }
+
+        .black-box {
+            background-color: #101517;
+            color: white;
+            position: relative;
+            border-radius: 15px;
+            border: 3px solid #101517;
+            padding: 0 20 0 20;
+            margin-bottom: 15px;
+        }
+
+        .black-box::after {
+            content: "";
+            position: absolute;
+            bottom: -15px; /* Adjust based on arrow size */
+            left: 20px; /* Adjust to align with profile image */
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #101517;     
+        }
+
+        .border-box {
+            padding: 10 20 10 20;
+            border: 3px solid #101517;
+            background-color: #f9f9f9;
+            color: #101517;
+        }
+
+        .border-box-2 {
+            flex: 1 1 90%;
+            padding: 25 80 25 80;
+            border: 3px solid #101517;
+            background-color: #f9f9f9;
+            font-size: 1.2em;
+            margin: 0 10 0 10;
+            align-content: center;
+            text-align: center;
+            color: #101517;
+            border-radius: 15px;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            clip-path: circle(50%);
+        }
+
+        .profile-img-2 {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .flex-box .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .profile p {
+            margin: 5px 0 0 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/5533c0f983.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="box">
+            <div class="black-box">
+                <p>I have been solving all the project ideas on roadmap.sh and i am suprised how far i have come from where i started.</p>
+                
+                <p>Highly recommended!</p>
+            </div>
+            <div class="flex-box profile">
+                <img src="profile.jpg" alt="" class="profile-img">
+                <div>
+                    <h2>Artem Jones</h4>
+                    <p>Junior Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="border-box">
+            <div>
+                <p>Since starting my career in 2021, 1 have only followed one resource, roadmap.sh, it truly helped me go from 0 to having a job and changing the financial trajectory of my family</p>
+            </div>
+            <div class="flex-box profile">
+                <img src="profile.jpg" alt="" class="profile-img">
+                <div>
+                    <h2>Artem Jones</h4>
+                    <p>Junior Frontend Developer</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="profile-box">
+            <img src="profile.jpg" alt="" class="profile-img-2">
+        </div>
+        <div class="content-box black-box-2">
+            <li>
+            <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+            </li>
+
+            <p class="headline">Jackie Mackle</p>
+            <p style="color: gray;">Engineering Manager</p>
+            <p>I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill up and grow in your career.</p>
+        </div>
+        <footer class="border-box-2">
+            <p>roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
